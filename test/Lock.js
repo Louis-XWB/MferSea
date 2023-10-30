@@ -122,5 +122,22 @@ describe("Lock", function () {
         );
       });
     });
+
+    describe("message", function () {
+      it("Should return the right message", async function () {
+        const { lock } = await loadFixture(deployOneYearLockFixture);
+
+        expect(await lock.message()).to.equal("Hello World");
+      });
+
+      it("Should set the right message", async function () {
+        const { lock } = await loadFixture(deployOneYearLockFixture);
+
+        await expect(lock.setMessage("mmmm"))
+          .to.emit(lock, "SetMessage")
+          .withArgs("mmmm");
+        await expect(await lock.message()).to.equal("mmmm");
+      });
+    });
   });
 });
