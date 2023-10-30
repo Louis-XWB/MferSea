@@ -1,10 +1,24 @@
-# Sample Hardhat Project
+# Super Artist Studio
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Super Artist Studio is a DApp designed for NFT publishing studios. It provides a seamless interface and experience for artists and publishers to mint and manage their NFT artworks.
 
-Try running some of the following tasks:
 
-# Start hardhat
+
+## Features
+
+* **NFT Minting**: Artists can create unique digital tokens representing their artworks.
+
+* **NFT Management**: Manage, transfer, and showcase your NFT collection.
+
+* **Integrated with Hardhat**: Developed and tested with Hardhat for a reliable smart contract development experience.
+
+## Quick Start
+
+### Set up Hardhat
+Hardhat is used in this project for smart contract development, testing, and deployment.
+
+To get started with Hardhat:
+
 ```shell
 npx hardhat help
 npx hardhat test
@@ -14,8 +28,16 @@ npx hardhat run scripts/deploy.js
 npx hardhat run scripts/deploy.js --network localhost
 ```
 
-# Start project - development
+### Start the DApp - Development Mode
+To start the React application:
 ```shell
-npm start
+npm run start
 ```
+
+This will start the development server, and the DApp should be accessible at `http://localhost:3000`.
+
+## Contributing
+Feel free to submit issues or pull requests if you have suggestions or improvements for the project.
+
+
 
