@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import { ethers } from 'ethers';
 
 function App() {
+  const connect = async () => {
+    // A Web3Provider wraps a standard Web3 provider, which is
+    // what MetaMask injects as window.ethereum into each page
+    const provider = new ethers.providers.Web3Provider(window.ethereum)
+    console.log(provider)
+
+    await provider.send("eth_requestAccounts", []);
+    const signer = provider.getSigner()
+    console.log(provider)
+
+    const address = await signer.getAddress()
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={connect}>Connect wallet</button>
     </div>
   );
 }
