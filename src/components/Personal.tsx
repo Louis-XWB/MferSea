@@ -81,7 +81,7 @@ export default function Personal() {
                     style={{ height: '100%', borderRight: 0 }}
 
                 >
-                    <Menu.SubMenu title="藏品" >
+                    <Menu.SubMenu title="Collections" >
                         <Menu.Item icon={React.createElement(PoundOutlined)}><Link to="collectible-mint">铸币</Link></Menu.Item>
                         <Menu.Item icon={React.createElement(PropertySafetyOutlined)}><Link to="collectible-browse">浏览</Link></Menu.Item>
                     </Menu.SubMenu>
