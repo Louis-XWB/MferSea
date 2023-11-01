@@ -1,5 +1,7 @@
 export default function MarketBrowser(){
     return (
-        <div>sss</div>
+        <div>
+            This is the market browser for NFTs.
+        </div>
     )
 }

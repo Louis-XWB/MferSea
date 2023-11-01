@@ -6,7 +6,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
-import { Breadcrumb, Image, Layout, Menu, theme } from "antd";
+import { Breadcrumb, Divider, Image, Layout, Menu, Space, theme } from "antd";
 import Home from "./Home";
 
 import { Routes, Route, Outlet, Link } from "react-router-dom";
@@ -37,20 +37,36 @@ export default function TopLayout() {
 
   return (
     <Layout>
-      <Header className="header">
+      <Header className={`header ${styles.top_header}`}>
         <div className={styles.logo}>
           <Link to="/" onClick={() => setCurrent("home")}>
-            <Image src="/logo_nft.svg" width={50} preview={false}></Image>
+            <Image src="/logo_nft.png" width={50} preview={false}></Image>
           </Link>
+          <Space />
+          <Link to="/" onClick={() => setCurrent("home")}>
+            <span
+              style={{
+                fontSize: "23px",
+                fontWeight: "bold",
+                color: "white",
+                marginLeft: "10px",
+                marginRight: "30px",
+              }}
+            >
+              MferSea
+            </span>
+          </Link>
+          <Divider type="vertical" />
         </div>
         <Menu
           theme="dark"
           mode="horizontal"
           selectedKeys={[current]}
-          style={{ fontSize: "15px" }}
+          style={{ fontSize: "16px", marginLeft: "20px" }}
+          className={styles.custom_selected_style}
           onClick={(e) => {
-            setCurrent(e.key)
-            console.log("---onClick------"+current);
+            setCurrent(e.key);
+            console.log("---onClick------" + current);
           }}
         >
           <Menu.Item key="home">
@@ -67,9 +83,7 @@ export default function TopLayout() {
           <Menu.Item key="connect">
             <Connect />
           </Menu.Item>
-          <Menu.Item key="ConnectIpfs">
-            {/* <ConnectIpfs /> */}
-          </Menu.Item>
+          <Menu.Item key="ConnectIpfs">{/* <ConnectIpfs /> */}</Menu.Item>
         </Menu>
       </Header>
       <div>

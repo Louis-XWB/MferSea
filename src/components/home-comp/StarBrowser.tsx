@@ -1,5 +1,7 @@
 export default function StarBrowser(){
     return (
-        <div>sss</div>
+        <div>
+            This is the star browser for NFTs.
+        </div>
     )
 }

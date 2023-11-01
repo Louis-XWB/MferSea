@@ -1,5 +1,7 @@
 export default function ArticleBrowser(){
     return (
-        <div>sssnnnnnnnnnnnnnnnnnnnnnnnnnn</div>
+        <div>
+            This is the article browser for NFTs.
+        </div>
     )
 }

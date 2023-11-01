@@ -67,7 +67,7 @@ export default function NftMarket() {
                 <Dropdown menu={{ items, onClick }}>
                     <a onClick={e => e.preventDefault()}>
                         <Space>
-                            分类
+                            Filter
                             <DownOutlined />
                         </Space>
                     </a>
