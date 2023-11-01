@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../index.css";
 import {
   LaptopOutlined,
@@ -27,6 +27,11 @@ type Props = {
 };
 
 export default function TopLayout() {
+
+  useEffect(() => {
+    document.title = "MferSea";
+  }, []);
+
   const {
     token: { colorBgContainer },
   } = theme.useToken();
