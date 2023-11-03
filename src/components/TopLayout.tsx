@@ -27,7 +27,6 @@ type Props = {
 };
 
 export default function TopLayout() {
-
   useEffect(() => {
     document.title = "MferSea";
   }, []);
@@ -88,7 +87,9 @@ export default function TopLayout() {
           <Menu.Item key="connect">
             <Connect />
           </Menu.Item>
-          <Menu.Item key="ConnectIpfs">{/* <ConnectIpfs /> */}</Menu.Item>
+          <Menu.Item key="ConnectIpfs">
+            <ConnectIpfs />
+          </Menu.Item>
         </Menu>
       </Header>
       <div>
