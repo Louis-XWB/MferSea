@@ -104,7 +104,7 @@ export default function Personal() {
           </Menu.SubMenu>
         </Menu>
       </Sider>
-      <Layout style={{ padding: "0 12px",background: colorBgContainer }}>
+      <Layout style={{ padding: "0 12px", background: colorBgContainer }}>
         {/* <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
           <Breadcrumb.Item>List</Breadcrumb.Item>
@@ -113,7 +113,7 @@ export default function Personal() {
         <Content
           style={{
             padding: 24,
-            margin: "100vh",
+            // margin: "100vh",
           }}
         >
           <Routes>

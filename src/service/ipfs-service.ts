@@ -35,3 +35,18 @@ export const storeArticle = async (article: any) => {
 
   return await addToIpfs(article);
 }
+
+
+
+export const storeMetaDataTest = async (meta: any) => {
+
+  const json = JSON.stringify(meta)
+  alert(json)
+  try {
+    const added = await ipfs.add(json)
+    alert(added.path)
+  } catch (e) {
+    alert(e)
+  }
+
+}
