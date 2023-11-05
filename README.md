@@ -3,7 +3,6 @@
 Super Artist Studio is a DApp designed for NFT publishing studios. It provides a seamless interface and experience for artists and publishers to mint and manage their NFT artworks.
 
 
-
 ## Features
 
 * **NFT Minting**: Artists can create unique digital tokens representing their artworks.
@@ -11,6 +10,16 @@ Super Artist Studio is a DApp designed for NFT publishing studios. It provides a
 * **NFT Management**: Manage, transfer, and showcase your NFT collection.
 
 * **Integrated with Hardhat**: Developed and tested with Hardhat for a reliable smart contract development experience.
+
+## Preview
+
+### mint NFT
+
+<img src="https://github.com/Louis-XWB/super-artist-studio/blob/main/pic_browse.jpg" width="80%">
+
+### browse NFT
+
+<img src="https://github.com/Louis-XWB/super-artist-studio/blob/main/pic_browse.jpg" width="80%">
 
 ## Quick Start
 
