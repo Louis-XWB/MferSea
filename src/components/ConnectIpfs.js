@@ -29,7 +29,7 @@ function ConnectIpfs() {
     return (
         <div>
 
-            <button onClick={() => testIpfs()}>Connect IPFS</button>
+            <span onClick={() => testIpfs()}>Connect IPFS</span>
 
             {/* <a href="javascript:void(0);" onClick={connectArweave}>
                 connectArweave

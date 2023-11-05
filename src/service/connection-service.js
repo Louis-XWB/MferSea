@@ -61,17 +61,17 @@ export const connectAddress = async () => {
         let network = await provider.getNetwork();
 
         // 将预期的链 ID 转换为十进制数字
-        const supported = parseInt(configuration().chainId, 16);
+        const supportedChainId = configuration().chainId;
 
         // 使用严格等于进行比较
-        if (network && network.chainId === supported) {
+        if (network && network.chainId === supportedChainId) {
             let signer = provider.getSigner();
             if (signer) {
                 let address = await signer.getAddress();
                 return address;
             }
         }
-        console.warn(`Network chainId mismatch: expected ${supported}, got ${network ? network.chainId : 'unknown'}`);
+        console.warn(`Network chainId mismatch: expected ${supportedChainId}, got ${network ? network.chainId : 'unknown'}`);
     } catch (error) {
         console.error('Error connecting to address:', error);
     }

@@ -41,7 +41,8 @@ function NftMintor() {
       debugger;
       const data: NftMeta = { ...meta, imageUri: uri, type: "image" };
       const json = JSON.stringify(data);
-      const metauri = await storeMeta(json); //addToIpfs(json)
+      // const metauri = await storeMeta(json); //addToIpfs(json)
+      const metauri = await addToIpfs(json);
       messageBox("success", "", metauri);
       const { success, tokenId } = await mintNFT(metauri);
 
@@ -79,6 +80,7 @@ function NftMintor() {
           placeholder="Asset Image"
           className={styles.NftField}
           onChange={(e) => {
+            // e.target.files && store(e.target.files[0]);
             e.target.files && store(e.target.files[0]);
           }}
         />
@@ -91,7 +93,7 @@ function NftMintor() {
         />
 
         <Button type="primary" onClick={mint}>
-          铸币
+          Mint
         </Button>
       </div>
     </div>

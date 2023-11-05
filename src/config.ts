@@ -37,7 +37,7 @@ const goerliConf: NetworkConfiguration = {
 }
 
 const confs: NetworkConfiguration[] = [
-    goerliConf,
+    // goerliConf,
     {
 
         chainId: 0x7A69,
