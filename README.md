@@ -1,6 +1,6 @@
-# Super Artist Studio
+# MferSea
 
-Super Artist Studio is a DApp designed for NFT publishing studios. It provides a seamless interface and experience for artists and publishers to mint and manage their NFT artworks.
+MferSea is a DApp designed for NFT publishing studios. It provides a seamless interface and experience for artists and publishers to mint and manage their NFT artworks.
 
 
 ## Features
