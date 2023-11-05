@@ -13,13 +13,13 @@ Super Artist Studio is a DApp designed for NFT publishing studios. It provides a
 
 ## Preview
 
-### mint NFT
-
-<img src="https://github.com/Louis-XWB/super-artist-studio/blob/main/pic_browse.jpg" width="80%">
-
 ### browse NFT
 
 <img src="https://github.com/Louis-XWB/super-artist-studio/blob/main/pic_browse.jpg" width="80%">
+
+### mint NFT
+
+<img src="https://github.com/Louis-XWB/super-artist-studio/blob/main/pic_mint.jpg" width="80%">
 
 ## Quick Start
 
