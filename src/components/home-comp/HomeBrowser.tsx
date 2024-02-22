@@ -1,11 +1,11 @@
 export default function HomeBrowser(){
     return (
         <div>
-            <a href="http://mcdonalds.com.au/gizmos">打开 mcdonalds APP</a >
+            <a href="http://mcdonalds.com.au">打开 mcdonalds APP</a >
 
             or
             <br />
-            <a href="https://mcdonalds.com.au/gizmos">打开 mcdonalds APP 2</a >
+            <a href="https://mcdonalds.com.au">打开 mcdonalds APP 2</a >
 
         </div>
     )
