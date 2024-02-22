@@ -1,12 +1,15 @@
 export default function HomeBrowser(){
     return (
         <div>
-            <a href="mcdonalds://openLogin/login.app">打开 mcdonalds APP</a >
+            <a href="mcdonalds://mcdonaldsca-dev.smart.link">打开 mcdonalds APP</a >
 
             or
             <br />
-            <a href="mcdonalds://openLogin">打开 mcdonalds APP 2</a >
+            <a href="mcdonalds://mcdonaldsca-dev.smart.link">打开 mcdonalds APP 2</a >
 
         </div>
     )
 }
+
+
+// https://mcdonaldsca.smart.link/.well-known/assetlinks.json
